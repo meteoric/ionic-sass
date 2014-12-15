@@ -20,7 +20,7 @@ Then in your app's `.scss` file:
 
 Importing the source SASS files as opposed to including compiled or CDN versions allows you to easily customize or theme your app using SASS variables.
 
-**_app-variables.import.scss**
+**_app-variables.scss**
 
 ```
 // Change Ionic's `positive` color to Meteor's red color:
@@ -31,7 +31,7 @@ $positive: #DE4F4F;
 
 ```
 // Import your custom variables
-@import './_app-variables.import.scss';
+@import 'app-variables';
 
 // Then import ionic after. Ionic will use your variables instead of it's own.
 @import "ionic";
