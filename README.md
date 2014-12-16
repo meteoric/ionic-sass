@@ -38,7 +38,7 @@ $positive: #DE4F4F;
 @import 'app-variables';
 
 // Then import ionic after. Ionic will use your variables instead of it's own.
-@import "ionic";
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
 ```
 
 ## Icons
