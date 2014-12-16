@@ -1,48 +1,47 @@
 Package.describe({
   name: 'meteoric:ionic-sass',
   summary: "Ionic's CSS Framework in SASS and bundled for Meteor.",
-  version: '0.1.3',
+  version: '0.1.4',
   git: 'https://github.com/meteoric/ionic-sass'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.use('stevezhu:sass@1.3.2');
-
-  api.addFiles('sass_include_paths.json', 'server');
+  api.use("fourseven:scss@1.0.0", ["server"]);
+  api.imply("fourseven:scss", ["server"]);
 
   api.addFiles([
-    'ionic-sass/_action-sheet.scss',
-    'ionic-sass/_animations.scss',
-    'ionic-sass/_backdrop.scss',
-    'ionic-sass/_badge.scss',
-    'ionic-sass/_bar.scss',
-    'ionic-sass/_button-bar.scss',
-    'ionic-sass/_button.scss',
-    'ionic-sass/_checkbox.scss',
-    'ionic-sass/_form.scss',
-    'ionic-sass/_grid.scss',
-    'ionic-sass/_items.scss',
-    'ionic-sass/_list.scss',
-    'ionic-sass/_loading.scss',
-    'ionic-sass/_menu.scss',
-    'ionic-sass/_mixins.scss',
-    'ionic-sass/_modal.scss',
-    'ionic-sass/_platform.scss',
-    'ionic-sass/_popover.scss',
-    'ionic-sass/_popup.scss',
-    'ionic-sass/_progress.scss',
-    'ionic-sass/_radio.scss',
-    'ionic-sass/_range.scss',
-    'ionic-sass/_reset.scss',
-    'ionic-sass/_scaffolding.scss',
-    'ionic-sass/_select.scss',
-    'ionic-sass/_slide-box.scss',
-    'ionic-sass/_tabs.scss',
-    'ionic-sass/_toggle.scss',
-    'ionic-sass/_type.scss',
-    'ionic-sass/_util.scss',
-    'ionic-sass/_variables.scss'
+    'stylesheets/_action-sheet.scss',
+    'stylesheets/_animations.scss',
+    'stylesheets/_backdrop.scss',
+    'stylesheets/_badge.scss',
+    'stylesheets/_bar.scss',
+    'stylesheets/_button-bar.scss',
+    'stylesheets/_button.scss',
+    'stylesheets/_checkbox.scss',
+    'stylesheets/_form.scss',
+    'stylesheets/_grid.scss',
+    'stylesheets/_items.scss',
+    'stylesheets/_list.scss',
+    'stylesheets/_loading.scss',
+    'stylesheets/_menu.scss',
+    'stylesheets/_mixins.scss',
+    'stylesheets/_modal.scss',
+    'stylesheets/_platform.scss',
+    'stylesheets/_popover.scss',
+    'stylesheets/_popup.scss',
+    'stylesheets/_progress.scss',
+    'stylesheets/_radio.scss',
+    'stylesheets/_range.scss',
+    'stylesheets/_reset.scss',
+    'stylesheets/_scaffolding.scss',
+    'stylesheets/_select.scss',
+    'stylesheets/_slide-box.scss',
+    'stylesheets/_tabs.scss',
+    'stylesheets/_toggle.scss',
+    'stylesheets/_type.scss',
+    'stylesheets/_util.scss',
+    'stylesheets/_variables.scss'
   ], 'server');
 
   api.addFiles('_ionic.scss', 'server');
