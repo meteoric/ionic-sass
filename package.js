@@ -39,6 +39,7 @@ Package.onUse(function(api) {
     'stylesheets/_slide-box.scss',
     'stylesheets/_tabs.scss',
     'stylesheets/_toggle.scss',
+    'stylesheets/_transitions.scss',
     'stylesheets/_type.scss',
     'stylesheets/_util.scss',
     'stylesheets/_variables.scss'

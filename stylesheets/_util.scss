@@ -1,8 +1,8 @@
 
 /**
- * Utility Classes
- * --------------------------------------------------
- */
+* Utility Classes
+* --------------------------------------------------
+*/
 
 .hide {
   display: none;
@@ -69,7 +69,11 @@
   z-index: $z-index-click-block;
   width: 100%;
   height: 100%;
-  background: transparent;
+  opacity: 0;
+  @include translate3d(0, 0, 0);
+}
+.click-block-hide {
+  @include translate3d(-9999px, 0, 0);
 }
 
 .no-resize {
@@ -108,9 +112,9 @@
 }
 
 /**
- * Content Padding
- * --------------------------------------------------
- */
+* Content Padding
+* --------------------------------------------------
+*/
 
 .padding {
   padding: $content-padding;
@@ -138,9 +142,9 @@
 
 
 /**
- * Rounded
- * --------------------------------------------------
- */
+* Rounded
+* --------------------------------------------------
+*/
 
 .rounded {
   border-radius: $border-radius-base;
@@ -148,12 +152,12 @@
 
 
 /**
- * Utility Colors
- * --------------------------------------------------
- * Utility colors are added to help set a naming convention. You'll
- * notice we purposely do not use words like "red" or "blue", but
- * instead have colors which represent an emotion or generic theme.
- */
+* Utility Colors
+* --------------------------------------------------
+* Utility colors are added to help set a naming convention. You'll
+* notice we purposely do not use words like "red" or "blue", but
+* instead have colors which represent an emotion or generic theme.
+*/
 
 .light, a.light {
   color: $light;

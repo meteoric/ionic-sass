@@ -1,17 +1,17 @@
 
 /**
- * Resets
- * --------------------------------------------------
- * Adapted from normalize.css and some reset.css. We don't care even one
- * bit about old IE, so we don't need any hacks for that in here.
- *
- * There are probably other things we could remove here, as well.
- *
- * normalize.css v2.1.2 | MIT License | git.io/normalize
+* Resets
+* --------------------------------------------------
+* Adapted from normalize.css and some reset.css. We don't care even one
+* bit about old IE, so we don't need any hacks for that in here.
+*
+* There are probably other things we could remove here, as well.
+*
+* normalize.css v2.1.2 | MIT License | git.io/normalize
 
- * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
- * http://cssreset.com
- */
+* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,9 +47,9 @@ q:before, q:after {
 }
 
 /**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
+* Prevent modern browsers from displaying `audio` without controls.
+* Remove excess height in iOS 5 devices.
+*/
 
 audio:not([controls]) {
   display: none;
@@ -57,8 +57,8 @@ audio:not([controls]) {
 }
 
 /**
- * Hide the `template` element in IE, Safari, and Firefox < 22.
- */
+* Hide the `template` element in IE, Safari, and Firefox < 22.
+*/
 
 [hidden],
 template {
@@ -70,14 +70,14 @@ script {
 }
 
 /* ==========================================================================
-   Base
-   ========================================================================== */
+Base
+========================================================================== */
 
 /**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *  user zoom.
- */
+* 1. Set default font family to sans-serif.
+* 2. Prevent iOS text size adjust after orientation change, without disabling
+*  user zoom.
+*/
 
 html {
   @include user-select(none);
@@ -88,8 +88,8 @@ html {
 }
 
 /**
- * Remove default margin.
- */
+* Remove default margin.
+*/
 
 body {
   margin: 0;
@@ -98,8 +98,8 @@ body {
 
 
 /**
- * Remove default outlines.
- */
+* Remove default outlines.
+*/
 a,
 button,
 :focus,
@@ -111,8 +111,8 @@ a:hover {
 }
 
 /* *
- * Remove tap highlight color
- */
+* Remove tap highlight color
+*/
 
 a {
   -webkit-user-drag: none;
@@ -125,13 +125,13 @@ a {
 }
 
 /* ==========================================================================
-   Typography
-   ========================================================================== */
+Typography
+========================================================================== */
 
 
 /**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
+* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+*/
 
 b,
 strong {
@@ -139,16 +139,16 @@ strong {
 }
 
 /**
- * Address styling not present in Safari 5 and Chrome.
- */
+* Address styling not present in Safari 5 and Chrome.
+*/
 
 dfn {
   font-style: italic;
 }
 
 /**
- * Address differences between Firefox and other browsers.
- */
+* Address differences between Firefox and other browsers.
+*/
 
 hr {
   -moz-box-sizing: content-box;
@@ -158,8 +158,8 @@ hr {
 
 
 /**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
+* Correct font family set oddly in Safari 5 and Chrome.
+*/
 
 code,
 kbd,
@@ -170,32 +170,32 @@ samp {
 }
 
 /**
- * Improve readability of pre-formatted text in all browsers.
- */
+* Improve readability of pre-formatted text in all browsers.
+*/
 
 pre {
   white-space: pre-wrap;
 }
 
 /**
- * Set consistent quote types.
- */
+* Set consistent quote types.
+*/
 
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 /**
- * Address inconsistent and variable font size in all browsers.
- */
+* Address inconsistent and variable font size in all browsers.
+*/
 
 small {
   font-size: 80%;
 }
 
 /**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
+* Prevent `sub` and `sup` affecting `line-height` in all browsers.
+*/
 
 sub,
 sup {
@@ -214,8 +214,8 @@ sub {
 }
 
 /**
- * Define consistent border, margin, and padding.
- */
+* Define consistent border, margin, and padding.
+*/
 
 fieldset {
   margin: 0 2px;
@@ -224,9 +224,9 @@ fieldset {
 }
 
 /**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
+* 1. Correct `color` not being inherited in IE 8/9.
+* 2. Remove padding so people aren't caught out if they zero out fieldsets.
+*/
 
 legend {
   padding: 0; /* 2 */
@@ -234,13 +234,13 @@ legend {
 }
 
 /**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- * 4. Remove any default :focus styles
- * 5. Make sure webkit font smoothing is being inherited
- * 6. Remove default gradient in Android Firefox / FirefoxOS
- */
+* 1. Correct font family not being inherited in all browsers.
+* 2. Correct font size not being inherited in all browsers.
+* 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+* 4. Remove any default :focus styles
+* 5. Make sure webkit font smoothing is being inherited
+* 6. Remove default gradient in Android Firefox / FirefoxOS
+*/
 
 button,
 input,
@@ -257,9 +257,9 @@ textarea {
 }
 
 /**
- * Address Firefox 4+ setting `line-height` on `input` using `importnt` in
- * the UA stylesheet.
- */
+* Address Firefox 4+ setting `line-height` on `input` using `importnt` in
+* the UA stylesheet.
+*/
 
 button,
 input {
@@ -267,11 +267,11 @@ input {
 }
 
 /**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
+* Address inconsistent `text-transform` inheritance for `button` and `select`.
+* All other form control elements do not inherit `text-transform` values.
+* Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+* Correct `select` style inheritance in Firefox 4+ and Opera.
+*/
 
 button,
 select {
@@ -279,12 +279,12 @@ select {
 }
 
 /**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *  and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *  `input` and others.
- */
+* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+*  and `video` controls.
+* 2. Correct inability to style clickable `input` types in iOS.
+* 3. Improve usability and consistency of cursor style between image-type
+*  `input` and others.
+*/
 
 button,
 html input[type="button"], /* 1 */
@@ -295,8 +295,8 @@ input[type="submit"] {
 }
 
 /**
- * Re-set default cursor for disabled elements.
- */
+* Re-set default cursor for disabled elements.
+*/
 
 button[disabled],
 html input[disabled] {
@@ -304,10 +304,10 @@ html input[disabled] {
 }
 
 /**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *  (include `-moz` to future-proof).
- */
+* 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+* 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+*  (include `-moz` to future-proof).
+*/
 
 input[type="search"] {
   -webkit-box-sizing: content-box; /* 2 */
@@ -317,9 +317,9 @@ input[type="search"] {
 }
 
 /**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
+* Remove inner padding and search cancel button in Safari 5 and Chrome
+* on OS X.
+*/
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
@@ -327,8 +327,8 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 /**
- * Remove inner padding and border in Firefox 4+.
- */
+* Remove inner padding and border in Firefox 4+.
+*/
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -337,9 +337,9 @@ input::-moz-focus-inner {
 }
 
 /**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
+* 1. Remove default vertical scrollbar in IE 8/9.
+* 2. Improve readability and alignment in all browsers.
+*/
 
 textarea {
   overflow: auto; /* 1 */
@@ -352,12 +352,12 @@ img {
 }
 
 /* ==========================================================================
-   Tables
-   ========================================================================== */
+Tables
+========================================================================== */
 
 /**
- * Remove most spacing between table cells.
- */
+* Remove most spacing between table cells.
+*/
 
 table {
   border-spacing: 0;
