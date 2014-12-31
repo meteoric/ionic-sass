@@ -93,7 +93,7 @@ $ios-transition-box-shadow:            0px 0px 12px rgba(0,0,0,0.5);
 .nav-bar-transition-ios {
 
   .title,
-  .buttons,
+  .button,
   .back-text {
     @include transition-duration( $ios-transition-duration );
     @include transition-timing-function( $ios-transition-timing-function );
@@ -115,6 +115,59 @@ $ios-transition-box-shadow:            0px 0px 12px rgba(0,0,0,0.5);
 
     .header-item {
       display: none;
+    }
+  }
+
+  &.nav-bar-direction-forward {
+    .title-entering.title-stage {
+      opacity: 0;
+      @include translate3d(98%, 0, 0);
+    }
+    .title-entering.title-active {
+      opacity: 1;
+      @include translate3d(0, 0, 0);
+    }
+    .title-leaving.title-stage {
+      opacity: 1;
+      @include translate3d(0, 0, 0);
+    }
+    .title-leaving.title-active {
+      opacity: 0;
+      @include translate3d(-33%, 0, 0);
+    }
+  }
+
+  &.nav-bar-direction-back {
+    .title-entering.title-stage {
+      opacity: 0;
+      @include translate3d(-33%, 0, 0);
+    }
+    .title-entering.title-active {
+      opacity: 1;
+      @include translate3d(0, 0, 0);
+    }
+    .title-leaving.title-stage {
+      opacity: 1;
+      @include translate3d(0, 0, 0);
+    }
+    .title-leaving.title-active {
+      opacity: 0;
+      @include translate3d(98%, 0, 0);
+    }
+  }
+
+  &.nav-bar-direction-forward, &.nav-bar-direction-back {
+    .button-entering.button-stage {
+      opacity: 0;
+    }
+    .button-entering.button-active {
+      opacity: 1;
+    }
+    .button-leaving.button-stage {
+      opacity: 1;
+    }
+    .button-leaving.button-active {
+      opacity: 0;
     }
   }
 
@@ -197,11 +250,41 @@ $android-transition-timing-function:      cubic-bezier(0.4, 0.6, 0.2, 1) !defaul
 .nav-bar-transition-android {
 
   .title,
-  .buttons {
+  .button {
     @include transition-duration( $android-transition-duration );
     @include transition-timing-function( $android-transition-timing-function );
     -webkit-transition-property: opacity;
     transition-property: opacity;
+  }
+
+  &.nav-bar-direction-forward, &.nav-bar-direction-back {
+    .title-entering.title-stage {
+      opacity: 0;
+    }
+    .title-entering.title-active {
+      opacity: 1;
+    }
+    .title-leaving.title-stage {
+      opacity: 1;
+    }
+    .title-leaving.title-active {
+      opacity: 0;
+    }
+  }
+
+  &.nav-bar-direction-forward, &.nav-bar-direction-back {
+    .button-entering.button-stage {
+      opacity: 0;
+    }
+    .button-entering.button-active {
+      opacity: 1;
+    }
+    .button-leaving.button-stage {
+      opacity: 1;
+    }
+    .button-leaving.button-active {
+      opacity: 0;
+    }
   }
 
   .nav-bar-active,
