@@ -48,3 +48,6 @@ You may also want to install our [Ionicons](https://github.com/meteoric/ionicons
 ## Docs
 
 See the official [Ionic CSS Docs](http://ionicframework.com/docs/components/) site for usage instructions.
+
+## License
+[MIT License](/blob/master/LICENSE.txt)
