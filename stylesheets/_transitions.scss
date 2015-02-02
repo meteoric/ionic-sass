@@ -178,7 +178,7 @@ $ios-transition-box-shadow:            0px 0px 12px rgba(0,0,0,0.5);
 // Android View Transitions
 // -------------------------------
 
-$android-transition-duration:             200ms !default;
+$android-transition-duration:             320ms !default;
 $android-transition-timing-function:      cubic-bezier(0.4, 0.6, 0.2, 1) !default;
 
 
@@ -192,14 +192,7 @@ $android-transition-timing-function:      cubic-bezier(0.4, 0.6, 0.2, 1) !defaul
     transition-property: transform;
   }
 
-  .nav-view-active {
-    z-index: $z-index-view-above;
-  }
-
   &.nav-view-direction-forward {
-    .nav-view-entering {
-      z-index: $z-index-view-above;
-    }
     .nav-view-entering.nav-view-stage {
       @include translate3d(98%, 0, 0);
     }
@@ -207,9 +200,6 @@ $android-transition-timing-function:      cubic-bezier(0.4, 0.6, 0.2, 1) !defaul
       @include translate3d(0, 0, 0);
     }
 
-    .nav-view-leaving {
-      z-index: $z-index-view-below;
-    }
     .nav-view-leaving.nav-view-stage {
       @include translate3d(0, 0, 0);
     }
@@ -219,9 +209,6 @@ $android-transition-timing-function:      cubic-bezier(0.4, 0.6, 0.2, 1) !defaul
   }
 
   &.nav-view-direction-back {
-    .nav-view-entering {
-      z-index: $z-index-view-below;
-    }
     .nav-view-entering.nav-view-stage {
       @include translate3d(-98%, 0, 0);
     }
@@ -229,9 +216,6 @@ $android-transition-timing-function:      cubic-bezier(0.4, 0.6, 0.2, 1) !defaul
       @include translate3d(0, 0, 0);
     }
 
-    .nav-view-leaving {
-      z-index: $z-index-view-above;
-    }
     .nav-view-leaving.nav-view-stage {
       @include translate3d(0, 0, 0);
     }
@@ -304,29 +288,4 @@ $android-transition-timing-function:      cubic-bezier(0.4, 0.6, 0.2, 1) !defaul
     }
   }
 
-}
-
-
-
-// Transition Settings
-// -------------------------------
-
-.nav-view-cached,
-.nav-bar-cached {
-  display: none;
-}
-
-.nav-view-stage {
-  opacity: 0;
-  @include transition-duration( 0 );
-}
-
-.nav-bar-stage {
-  .title,
-  .buttons,
-  .back-text {
-    position: absolute;
-    opacity: 0;
-    @include transition-duration(0s);
-  }
 }
