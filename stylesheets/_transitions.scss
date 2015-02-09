@@ -1,3 +1,11 @@
+// Attempt to reduce CSS Animation flickering
+// http://nathanhoad.net/how-to-stop-css-animation-flicker-in-webkit
+.view {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
 
 // iOS View Transitions
 // -------------------------------
