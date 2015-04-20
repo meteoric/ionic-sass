@@ -87,7 +87,7 @@ $ios-transition-box-shadow:            0px 0px 12px rgba(0,0,0,0.5);
     }
     .nav-view-leaving.nav-view-active {
       opacity: 0.9;
-      @include translate3d(98%, 0, 0);
+      @include translate3d(101%, 0, 0);
     }
   }
 
