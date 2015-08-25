@@ -1,8 +1,8 @@
 
 /**
-* Badges
-* --------------------------------------------------
-*/
+ * Badges
+ * --------------------------------------------------
+ */
 
 .badge {
   @include badge-style($badge-default-bg, $badge-default-text);
