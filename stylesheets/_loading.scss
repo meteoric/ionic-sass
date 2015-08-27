@@ -1,8 +1,8 @@
 
 /**
-* Loading
-* --------------------------------------------------
-*/
+ * Loading
+ * --------------------------------------------------
+ */
 
 .loading-container {
   position: absolute;
@@ -21,7 +21,8 @@
   visibility: hidden;
   opacity: 0;
 
-  &:not(.visible) .icon {
+  &:not(.visible) .icon,
+  &:not(.visible) .spinner{
     display: none;
   }
   &.visible {

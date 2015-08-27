@@ -1,9 +1,9 @@
 
 /**
-* Menus
-* --------------------------------------------------
-* Side panel structure
-*/
+ * Menus
+ * --------------------------------------------------
+ * Side panel structure
+ */
 
 .menu {
   position: absolute;
@@ -35,6 +35,7 @@
 .menu-open .menu-content .pane,
 .menu-open .menu-content .scroll-content {
   pointer-events: none;
+  overflow: hidden;
 }
 
 .grade-b .menu-content,

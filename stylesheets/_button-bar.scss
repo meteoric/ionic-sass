@@ -1,8 +1,8 @@
 
 /**
-* Button Bar
-* --------------------------------------------------
-*/
+ * Button Bar
+ * --------------------------------------------------
+ */
 
 .button-bar {
   @include display-flex();
@@ -50,5 +50,12 @@
   &:last-child {
     border-right-width: 1px;
     border-radius: 0px $button-border-radius $button-border-radius 0px;
+  }
+}
+
+.button-bar > .button-small {
+  &:before,
+  .icon:before {
+    line-height: 28px;
   }
 }

@@ -1,12 +1,12 @@
 /**
-* Grid
-* --------------------------------------------------
-* Using flexbox for the grid, inspired by Philip Walton:
-* http://philipwalton.github.io/solved-by-flexbox/demos/grids/
-* By default each .col within a .row will evenly take up
-* available width, and the height of each .col with take
-* up the height of the tallest .col in the same .row.
-*/
+ * Grid
+ * --------------------------------------------------
+ * Using flexbox for the grid, inspired by Philip Walton:
+ * http://philipwalton.github.io/solved-by-flexbox/demos/grids/
+ * By default each .col within a .row will evenly take up
+ * available width, and the height of each .col with take
+ * up the height of the tallest .col in the same .row.
+ */
 
 .row {
   @include display-flex();
@@ -16,6 +16,14 @@
 
 .row-wrap {
   @include flex-wrap(wrap);
+}
+
+.row-no-padding {
+  padding: 0;
+
+  > .col {
+    padding: 0;
+  }
 }
 
 .row + .row {
